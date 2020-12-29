@@ -1,0 +1,56 @@
+site_linkAntora-employee1
+site_linkAnim-employee2
+
+1.CANT CREATE INSERT-UPDATE-DELETE TRIGGERS FOR EMP1 AND EMP2 AS AN INFINITE RECURSIVE RELATION IS ESTABLISHED WITH EMP.
+2.CANT INSERT IN TRANSACTION TABLE WHEN NEW USER IS INSERTED IN CUSTOMER TABLE AS PRIMAKY KEY AUTO INCREMENT IS NOT AVAILABLE
+ IN ORACLE 10.
+3.CANT USE VIEW AS WE CANT JUST SIMPLY EXECUTE 'SELECT *FROM VIEW' IN PLSQL BODY.THERE MUST BE AN INTO IN SELECT OPERATION.
+4.SHOULD NOT UPDATE OR DELETE FROM TRANSACTION DIRECTLY.IT SHOULD BE ONLY BE CHANGED WHEN FOREIGN KEYS ARE CHANGED.
+   DELETING IS HANDLED BY ON DELETE CASCADE.UPDATE IS NOT HANDLED AS WE RARELY UPDATE PRIMAY KEY OF A TABLE.SO NO TRIGGERS FOR IT
+   EXCEPT WITHDRAWAL AND DEPOSIT.
+5.CUSTOMER DELETE TRIGGER IS HANDLED BY ON DELETE CASCADE.NO NEED FOR UPDATE TRIGGERS AND INSERT TRIGGERS IN OUR CASE
+  AS NO FRAGMENTATION DONE HERE.SO NO TRIGGERS REQUIRED AT ALL.
+
+
+QUERIES:
+1.Select all customers of branch Uttara.(DONE).
+2.Select all employees of branch Tejgaon.(DONE).
+3.Select all transactions occured at branch Mohammadpur.(DONE).
+4.Select the list of employees who were involved in the transaction of customer Saiful Islam.(DONE).
+5.Select the list of customers handled by employee Iffatun Nesa.(DONE).
+6.Select all the employee's details who were involved in transaction in a certain range of time.(Done)
+7.Select all the customer's details who were involved in transaction in a certain range of time.(Done).
+8.Select all the transaction details that occured in a certain range of time.(DONE).
+9.Select total employees of branch Tejgaon.(DONE).
+10.Select total customers of branch Uttara. (DONE).
+11.Select total transactions that occured in a certain branch.(DONE).
+
+
+SQL FILES TO RUN IN ORDER:
+1.PROJECTDB1
+2.projectTrigger,projectProcedure.
+3.insertTransaction.
+4.main-to activate fragmentation;
+5.animSelect_Customer,Employee,Transaction
+6.main1;
+
+9proc+3func in project Procedure
+8 proc in procedure_transaction
+7 trigger
+13 procedure in procedure_Employee
+9 procedure in procedure_customer Total=49
+
+
+SQL FILES TO RUN IN ORDER SERVER/SITE:
+1.At first tahmeed will run projectdb1.
+2.Then he will execute only the first two triggers of projectTrigger.
+3.Then he will execute insert transaction.
+4.Then he should check whether the transaction is updated in customer table.
+5.If then antora and anim will run their projectdb1.
+6.Then tahmeed can run rest of the triggers,procedure,procedure_Customer_Employee_transaction.
+7.Then Antora and Anim can run their project_procedure.
+8.Then they should call 'frag' from main.
+9.Then they can rest run of the procedure_Customer_Employee_transaction.
+10.Then all three can run main1 and start testing.
+
+
