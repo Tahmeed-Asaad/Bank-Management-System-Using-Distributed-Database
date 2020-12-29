@@ -100,4 +100,4 @@ This is a distributed database designed to maintain the day-to-day operation of 
  
  ## Setup
  
-It is better to use Microsoft Visual Studio IDE (Integrated Development Environment) to run this project properly. The 'JOBPORTAL.sln' file should be opened with the IDE to  built the project and to run it.
+Oracle Database should be setup. The SQL scripts should be executed in the order mentioned in the 'Bank-Management-System-Using-Distributed-Database/PROJECT IRRESPECTIVE OF SERVER SITE/SOME PROBLEMS AND REMINDERS.txt' file.
