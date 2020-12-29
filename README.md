@@ -10,6 +10,8 @@
 
 * [Relational Schema](#relational-schema)
 
+* [Entity–Relationship Diagram](#entity-relationship-diagram)
+
 * [Demo Screenshots](#demo-screenshots)
 
 * [Setup](#setup)
@@ -54,7 +56,18 @@ This is a distributed database designed to maintain the day-to-day operation of 
 **Branch** (<span style="text-decoration: underline">BID</span>: integer, location: string).  
 **Employee** (EID: integer, Ename: string, salary: integer, designation: string, BID: integer).  
 **Customer** (Account_number: integer, Customer_name: string, balance: integer, address: string, BID: integer).  
-**Transaction** (TID: integer, deposit: integer, withdraw: integer, transaction_date: string, EID: integer, Account_number: integer).  
+**Transaction** (TID: integer, deposit: integer, withdraw: integer, transaction_date: string, EID: integer, Account_number: integer). 
+
+## Entity–Relationship Diagram
+ 
+ <div> 
+ 
+  <h3>   </h3>
+
+ <img src="DEMO_IMAGES/ERD.png">
+
+ </div>
+
 
   
   ## Demo Screenshots
