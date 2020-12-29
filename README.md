@@ -51,10 +51,10 @@ This is a distributed database designed to maintain the day-to-day operation of 
 
 ## Relational Schema
 
-Branch (BID: integer, location: string).  
-Employee (EID: integer, Ename: string, salary: integer, designation: string, BID: integer).  
-Customer (Account_number: integer, Customer_name: string, balance: integer, address: string, BID: integer).  
-Transaction (TID: integer, deposit: integer, withdraw: integer, transaction_date: string, EID: integer, Account_number: integer).  
+**Branch** (BID: integer, location: string).  
+**Employee** (EID: integer, Ename: string, salary: integer, designation: string, BID: integer).  
+**Customer** (Account_number: integer, Customer_name: string, balance: integer, address: string, BID: integer).  
+**Transaction** (TID: integer, deposit: integer, withdraw: integer, transaction_date: string, EID: integer, Account_number: integer).  
 
   
   ## Demo Screenshots
