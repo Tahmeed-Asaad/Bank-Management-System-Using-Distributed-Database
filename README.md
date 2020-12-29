@@ -1,8 +1,5 @@
 # Bank-Management-System-Using-Distributed-Database
 
-
-# Online-Job-Portal
-
 ## Table of contents
 
 * [Introduction](#introduction)
@@ -31,7 +28,7 @@ This is a distributed database designed to maintain the day-to-day operation of 
 * The admin/an employee can select/see all the entries of the ‘branch’ table
 * An authorized employee can update the information on the ‘Customer’ table (Only address)
 * An authorized employee can delete the information of a customer
-* Authorized employees can handle transaction-deposition of money, withdrawal of money of a customer. The transaction details can also be seen. Also, the balance of that customer will be updated accordingly
+* Authorized employees can handle transaction-deposition of money, withdrawal of money of a customer. The transaction details can also be seen. Also, the balance of that    customer will be updated accordingly
 * The admin/authorized employee can see all customer details of a certain branch
 * The admin/authorized employee can see all employee details of a certain branch
 * The admin/authorized employee can see all transaction details that occurred at a certain branch
@@ -43,6 +40,12 @@ This is a distributed database designed to maintain the day-to-day operation of 
 * The admin/authorized employee can see the total number of transactions that occurred at a certain branch
 * The admin/authorized employee can see the total number of customers who registered at a certain branch
 * The admin/authorized employee can see the total number of employees who work at a certain branch
+
+
+## Technologies
+
+* Oracle Database
+* PL/SQL
 
   
   ## Demo Screenshots
